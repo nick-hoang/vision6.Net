@@ -17,7 +17,7 @@ Vision6.net is a full service .net api for http://www.vision6.com.au. See the re
     var vision6Result = vision6ContactService.Add(listId, new List<Vision6Contact> {new Vision6Contact {Email = email, Mobile = mobile}}, true);
     if (!vision6Result.IsSuccess())
     {
-        return new AjaxModel {Success = false, Message = vision6Result.ErrorObject().Description};
+        return new AjaxModel {Success = false, Message = vision6Result.Error.Message};
     }
 
 
