@@ -7,14 +7,7 @@ namespace Vision6
         [JsonProperty("code")]
         public int Code { get; set; }
 
-        [JsonProperty("text")]
-        public string Text { get; set; }
-
-        [JsonProperty("param")]
-        public string Parameter { get; set; }
-
-        [JsonProperty("description")]
-        public string Description { get; set; }
-        
+        [JsonProperty("message")]
+        public string Message { get; set; }                
     }
 }

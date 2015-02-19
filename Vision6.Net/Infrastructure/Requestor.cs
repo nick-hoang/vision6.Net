@@ -56,7 +56,7 @@ namespace Vision6
                     else
                         vision6Error = Mapper<Vision6Error>.MapFromJson(ReadStream(webException.Response.GetResponseStream()), "error");
 
-                    throw new Vision6Exception(statusCode, vision6Error, vision6Error.Text);
+                    throw new Vision6Exception(statusCode, vision6Error, vision6Error.Message);
                 }
 
                 throw;
