@@ -40,15 +40,20 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Vision6AutoResponder.cs" />
+    <Compile Include="Entities\Vision6Batch.cs" />
     <Compile Include="Entities\Vision6Contact.cs" />
+    <Compile Include="Entities\Vision6EmailContact.cs" />
     <Compile Include="Entities\Vision6List.cs" />
     <Compile Include="Entities\Vision6Object.cs" />
     <Compile Include="Entities\Vision6ResponseObject.cs" />
     <Compile Include="Entities\Vision6Error.cs" />
     <Compile Include="Entities\Vision6RequestObject.cs" />
+    <Compile Include="Entities\Vision6SearchCondition.cs" />
+    <Compile Include="Entities\Vision6SmsContact.cs" />
+    <Compile Include="Infrastructure\Constants.cs" />
     <Compile Include="Infrastructure\EpochTime.cs" />
     <Compile Include="Infrastructure\Mapper.cs" />
-    <Compile Include="Infrastructure\Methods.cs" />
     <Compile Include="Infrastructure\ParameterBuilder.cs" />
     <Compile Include="Infrastructure\Requestor.cs" />
     <Compile Include="Infrastructure\Vision6Configuration.cs" />
@@ -56,6 +61,8 @@
     <Compile Include="Infrastructure\Vision6Exception.cs" />
     <Compile Include="Infrastructure\Urls.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Vision6AutoresponderService.cs" />
+    <Compile Include="Services\Vision6BatchService.cs" />
     <Compile Include="Services\Vision6ListService.cs" />
     <Compile Include="Services\Vision6Service.cs" />
     <Compile Include="Services\Vision6ContactService.cs" />
