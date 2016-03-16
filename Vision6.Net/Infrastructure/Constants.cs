@@ -11,6 +11,7 @@ namespace Vision6
         public const string CountAutoresponders = "countAutoresponders";
         public const string AddAutoresponder = "addAutoresponder";
         public const string AddBatch = "addBatch";
+        public const string SearchLists = "searchLists";
     }
 
     /// <summary>
